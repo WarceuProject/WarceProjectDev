@@ -1,0 +1,76 @@
+@keyframes scrollAnim {
+    0%,
+    20%,
+    80% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.scroll-mouse {
+    animation: scrollAnim 3s ease-in-out infinite;
+}
+
+/* hamburger animation */
+
+.hamburger-input:checked ~ .hamburger span:nth-child(1) {
+    transform: translateY(18px) rotate(45deg);
+}
+.hamburger-input:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-input:checked ~ .hamburger span:nth-child(3) {
+    transform: translateY(-18px) rotate(-45deg);
+}
+
+.hamburger-input:checked ~ .hamburger-list {
+    left: 0;
+}
+
+
+/* responsive */
+
+@media screen and (max-width : 1440px) {
+    .hamburger {
+        scale: 0;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .navbar {
+        top: -200px;
+    }
+    .hamburger {
+        scale: 1;
+    }
+
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+
+    .paragraph-jumbotron { 
+        font-size: 13px;
+    }
+
+    .illustration-jumbotron {
+        height: 300px;
+        width: 300px;
+    }
+
+    .scroll-icon {
+        height: 45px;
+        width: 20px;
+    }
+
+    .scroll-mouse {
+        height: 10px;
+        width: 10px;
+    }
+
+    .text-scroll-down {
+        font-size: 15px;
+    }
+}
+

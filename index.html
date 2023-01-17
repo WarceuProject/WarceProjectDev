@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+
+
+    <nav class="navbar zIndex-4 bg-dark" id="navbar">
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <input type="checkbox" id="hamburger" class="hamburger-input">
+    <label for="hamburger" class="hamburger zIndex-4">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    
+    <div class="hamburger-list zIndex-3">
+        <a href="#home">
+            <p>Home</p>
+        </a>
+        <a href="#about">
+            <p>About</p>
+        </a>
+        <a href="#">
+            <p>Project</p>
+        </a>
+        <a href="#">
+            <p>Contact</p>
+        </a>
+    </div>
+
+
+    <div class="screen-jumbotron jumbotron" id="home">
+        <div class="illustration-jumbotron"></div>
+        <h1 class="zIndex-2">Hello World <span class="txt-red">Warce Project Dev</span></h1>
+        <p style="" class="zIndex-2 paragraph-jumbotron">Articles, Lessons and Course, store <span class="txt-red">let's start</span></p>
+        <div class="scroll-icon zIndex-2">
+            <div class="scroll-mouse zIndex-2"></div>
+        </div>
+        <p class="text-scroll-down zIndex-2">scroll down</p>
+    </div>
+
+
+    <div class="screen-container about">
+        <h1 id="about">About</h1>
+        <p class="txt-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi dolorem placeat et? Inventore repudiandae blanditiis deleniti eaque dolores assumenda magnam sed odio ratione incidunt. Facilis harum ad earum consectetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, culpa pariatur provident necessitatibus cum eligendi laborum consequuntur quasi? Quam saepe laborum laboriosam dolorum repellat dolor nam fugiat id sapiente debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae aliquam nostrum et dicta laborum aperiam laudantium similique ut modi aliquid nemo aut quos, quis iure corporis voluptate, voluptas cumque.
+        </p>
+    </div>
+
+    <div class="screen-container project txt-paragraph">
+        <h1 id="project">Project</h1>
+        <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

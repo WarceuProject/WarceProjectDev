@@ -1,0 +1,216 @@
+@font-face {
+    font-family: poppins-regular;
+    src: url(../assest/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../assest/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-thin;
+    src: url(../assest/fonts/Poppins-Thin.ttf);
+}
+
+* {
+    font-family: poppins-regular;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* transform: translateY(-100px); */
+}
+
+.navbar h1 {
+    padding: 25px;
+    font-size: 30px;
+    cursor: default;
+}
+
+.navbar ul {
+    position: absolute;
+    display: flex;
+    right: 35px;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 33px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: var(--txt-hover);
+}
+
+/* hamburger */
+
+.hamburger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+    width: 45px;
+    top: 40px;
+    left: 30px;
+    cursor: pointer;
+    /* transform: translateX(-100px); */
+}
+
+.hamburger-input {
+    opacity: 0;
+    position: absolute;
+}
+
+.hamburger span {
+    height: 7px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--text);
+    transition: .3s ease-in-out;
+}
+
+.hamburger-list {
+    position: fixed;
+    height: 100vh;
+    width: 115px;
+    top: 0;
+    left: -115px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+    background-color: rgba(105, 105, 105, 0.082);
+    backdrop-filter: blur(3px);
+}
+
+.hamburger-list a {
+    padding: 20px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.hamburger-list a:hover {
+    color: var(--themes);
+    background-color: var(--txt-hover);
+}
+
+/* jumbotron */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron h1 {
+    font-size: 65px;
+}
+
+.paragraph-jumbotron {
+    font-size: 23px;
+}
+
+.illustration-jumbotron {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: 5%;
+    background-image: url(../assest/img/codingIllustration.png);
+    background-size: cover;
+}
+
+.scroll-icon {
+    border-radius: 30px;
+    position: relative;
+    bottom: -18%;
+    height: 55px;
+    width: 30px;
+    border: 2px solid var(--text);
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-mouse {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: var(--text);
+    border-radius: 50%;
+    top: 5px;
+}
+
+/* .scroll-mouse {
+    top: 30px;
+    font-size: 20px;
+} */
+
+.text-scroll-down {
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    opacity: .2;
+    font-family: poppins-thin;
+    cursor: default;
+}
+
+
+/* about */
+
+.about {
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about p {
+    margin-top: 100px;
+}
+
+
+/* Project */
+
+.project h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+}
+
+.grid div:nth-child(1) {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(74, 74, 228);
+}
+
+.grid div:nth-child(2) {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(231, 111, 51);
+}
+
+.grid div:nth-child(3) {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(186, 72, 72);
+}
