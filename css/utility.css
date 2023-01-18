@@ -93,7 +93,8 @@ body {
 }
 
 .btn:hover {
-	 background-color: #357825;
+    /* background-color: #357825; */
+    background-color: #1b7507;
 }
 /* done btn*/
 

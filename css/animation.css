@@ -40,7 +40,7 @@
 
     /* update */
     .jumbotron h1 {
-        font-size: 45px;
+        font-size: 38px;
     }
 
     /* .paragraph-jumbotron { 
@@ -49,12 +49,7 @@
 
     /* update */
     .paragraph-jumbotron { 
-        font-size: 18px;
-    }
-
-    .illustration-jumbotron {
-        height: 300px;
-        width: 300px;
+        font-size: 13px;
     }
 }
 

@@ -19,7 +19,7 @@
 
 /* navbar */
 
-.navbar {
+nav {
     position: fixed;
     display: flex;
     align-items: center;
@@ -28,30 +28,30 @@
     /* transform: translateY(-100px); */
 }
 
-.navbar h1 {
+nav h1 {
     padding: 25px;
     font-size: 30px;
     cursor: default;
 }
 
-.navbar ul {
+nav ul {
     position: absolute;
     display: flex;
     right: 35px;
 }
 
-.navbar ul li {
+nav ul li {
     list-style: none;
     padding: 33px;
 }
 
-.navbar ul li a {
+nav ul li a {
     text-decoration: none;
     font-size: 18px;
     transition: .3s ease-in-out;
 }
 
-.navbar ul li a:hover {
+nav ul li a:hover {
     color: var(--txt-red);
 }
 
