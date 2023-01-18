@@ -52,7 +52,7 @@
 }
 
 .navbar ul li a:hover {
-    color: var(--txt-hover);
+    color: var(--txt-red);
 }
 
 /* hamburger */
@@ -61,9 +61,10 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    height: 45px;
-    width: 45px;
+    height: 43px;
+    width: 43px;
     top: 40px;
     left: 30px;
     cursor: pointer;
@@ -77,7 +78,7 @@
 
 .hamburger span {
     height: 6px;
-    width: 80%;
+    width: 100%;
     border-radius: 30px;
     background-color: var(--text);
     transition: .3s ease-in-out;
@@ -106,7 +107,7 @@
 
 .hamburger-list a:hover {
     color: var(--themes);
-    background-color: var(--txt-hover);
+    background-color: var(--txt-red);
 }
 
 /* jumbotron */
@@ -131,124 +132,59 @@
     position: absolute;
     right: 5%;
     border-radius: 0%;
-    background-image: url(../assest/img/logo.png);
+    /* background-image: url(../assest/img/logo.png); */
     background-size: cover;
 }
 
-.scroll-icon {
-    border-radius: 30px;
-    position: relative;
-    bottom: -18%;
-    height: 55px;
-    width: 30px;
-    border: 2px solid var(--text);
-    display: flex;
-    justify-content: center;
-}
-
-.scroll-mouse {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background-color: var(--text);
-    border-radius: 50%;
-    top: 5px;
-}
-
-/* .scroll-mouse {
-    top: 30px;
-    font-size: 20px;
-} */
-
-.text-scroll-down {
-    font-size: 30px;
-    position: absolute;
-    bottom: 30px;
-    opacity: .2;
-    font-family: poppins-thin;
-    cursor: default;
-}
-
-
-/* about */
-
-.about {
-    margin-top: 200px;
-    padding: 50px;
-}
 /* start */
 .start {
-    margin-top: 200px;
-    padding: 50px;
-    
-}
-
-
-.about h1 {
     text-align: center;
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: column;
 }
 
-.about p {
-    margin-top: 100px;
+.start h1:nth-child(1) {
+    margin-bottom: 60px;
+}
+
+.start div {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.start div h1 i {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.start div:last-child div {
+    background-color: var(--text);
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.start div:last-child div img {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    /* background-color: var(--text); */
 }
 
 
-/* Project */
+/* end start */
 
-.project h1 {
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 1px solid red;
-}
-
-.grid div:nth-child(1) {
-    height: 100px;
-    width: 100px;
-    background-color: rgb(74, 74, 228);
-}
-
-.grid div:nth-child(2) {
-    height: 100px;
-    width: 100px;
-    background-color: rgb(231, 111, 51);
-}
-
-.grid div:nth-child(3) {
-    height: 100px;
-    width: 100px;
-    background-color: rgb(186, 72, 72);
-}
-/* Tambahan style btn */
-.btn, .btn:active, .btn:visited, .btn:active {
-	display: block;
-	text-align: center;
-	margin: 10px 0;
-	font-size: 1em;
-	cursor: pointer;
-	max-width: 80%;
-	background-color: #239b07;
-	color: #fff;
-	text-decoration: none;
-	letter-spacing: 0.03em;
-	padding: 10px 15px;
-	border: 1px solid #222;
-	border-radius: 4px;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0px 1px 0 0px rgba(255,255,255,0.3);
-	transition: background 0.15s ease-in-out;
-}
-
-.btn:hover {
-	 background-color: #357825;
-}
-/* done btn*/
-
-/* footer nya ngap */
 footer {
-    margin: 0;
-    text-align: center;
-    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
 }
