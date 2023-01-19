@@ -71,6 +71,18 @@ nav ul li a:hover {
     /* transform: translateX(-100px); */
 }
 
+/* add feature */
+
+.hamburgers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: var(--themes);
+    /* border: 1px solid; */
+}
+
 .hamburger-input {
     opacity: 0;
     position: absolute;

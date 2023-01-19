@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 150px;
     color: var(--text);
 }
 
@@ -77,14 +77,15 @@ body {
 	margin: 10px 0;
 	font-size: 1em;
 	cursor: pointer;
-	/* max-width: 80%; */
-    width: 80%;
+	max-width: 80%;
+    /* width: 80%; */
 	background-color: #239b07;
     /* background-color: rgb(48, 151, 30); */
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: 0.03em;
-	padding: 10px 15px;
+	/* padding: 10px 15px; */
+	padding: 10px 55px;
 	/* border: 1px solid #222; */
 	border-radius: 30px;
 	/* border-radius: 4px; */
